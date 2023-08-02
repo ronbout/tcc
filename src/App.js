@@ -1,11 +1,13 @@
 import ZoneConditions from "./components/ZoneConditions";
 import ZoneRequirements from "./components/ZoneRequirements";
+import zoneCalcs from "./assets/zoneCalcs";
 import "./App.css";
 
 function App() {
   const calcRequirements = (conditions) => {
+    let calcs = zoneCalcs(conditions);
     console.log(conditions);
-    alert("calc");
+    console.log(calcs);
   };
   return (
     <div className="App">
